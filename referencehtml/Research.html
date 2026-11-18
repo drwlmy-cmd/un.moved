@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151713">
+  <meta name="description" content="Research and references from Unmoved Studios.">
+  <title>Research — un.moved studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--ink:#151713;--paper:#e9e4dc;--green:#193a2d;--acid:#d8f16a;--muted:#a9a69e;--line:rgba(233,228,220,.23);--mono:'DM Mono',monospace;--sans:'DM Sans',Arial,sans-serif;--display:'Oswald',Impact,sans-serif}
+    *{box-sizing:border-box}html{min-height:100%;background:var(--ink)}body{min-height:100vh;margin:0;background:radial-gradient(ellipse at 18% 42%,rgba(25,58,45,.7),transparent 54%),var(--ink);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased}button,a{font:inherit}a{color:inherit}.page{min-height:100vh;padding:clamp(22px,4vw,56px);display:flex;flex-direction:column}.masthead{display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font-weight:800;letter-spacing:-.06em;text-decoration:none;font-size:20px}.brand small{display:block;font:10px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--acid)}.actions{display:flex;align-items:center;gap:12px}.action{min-height:42px;padding:10px 14px;border:1px solid var(--line);background:transparent;color:var(--paper);text-decoration:none;font:11px var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}.action:hover,.action:focus-visible{border-color:var(--acid);color:var(--acid)}.action:focus-visible,.research-node:focus-visible{outline:2px solid var(--acid);outline-offset:4px}.intro{display:flex;align-items:end;justify-content:space-between;gap:26px;padding:clamp(42px,8vh,92px) 0 30px}.eyebrow{color:var(--acid);font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase}.intro h1{margin:12px 0 0;font:600 clamp(56px,10vw,132px)/.9 var(--display);letter-spacing:-.025em;text-transform:uppercase}.intro p{max-width:330px;margin:0;color:var(--muted);font-size:14px;line-height:1.6}.research-layout{flex:1;min-height:440px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:clamp(24px,4vw,58px)}.research-map{position:relative;min-height:450px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 50% 50%,rgba(216,241,106,.07),transparent 48%),linear-gradient(135deg,rgba(233,228,220,.035),transparent 65%)}.research-map:before,.research-map:after{position:absolute;content:'';inset:50% auto auto 50%;width:78%;height:1px;background:var(--line);transform:translate(-50%,-50%) rotate(28deg);pointer-events:none}.research-map:after{transform:translate(-50%,-50%) rotate(-32deg)}.map-orbit{position:absolute;inset:50% auto auto 50%;width:min(72%,440px);aspect-ratio:1;border:1px solid var(--line);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}.map-orbit.inner{width:min(43%,260px);border-style:dashed;opacity:.65}.research-node{position:absolute;z-index:1;display:grid;justify-items:center;gap:8px;max-width:130px;padding:8px;border:0;background:transparent;color:var(--paper);text-align:center;cursor:pointer}.research-node .dot{width:13px;height:13px;border:1px solid var(--acid);border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(216,241,106,.09);transition:transform .2s,background .2s,box-shadow .2s}.research-node:hover .dot,.research-node[aria-pressed=true] .dot{transform:scale(1.45);background:var(--acid);box-shadow:0 0 0 9px rgba(216,241,106,.12)}.research-node .label{font:10px var(--mono);letter-spacing:.03em;text-shadow:0 1px 8px var(--ink)}.research-node:nth-of-type(3){top:12%;left:44%}.research-node:nth-of-type(4){top:22%;right:12%}.research-node:nth-of-type(5){top:42%;right:5%}.research-node:nth-of-type(6){bottom:19%;right:16%}.research-node:nth-of-type(7){bottom:8%;left:44%}.research-node:nth-of-type(8){bottom:20%;left:14%}.research-node:nth-of-type(9){top:43%;left:5%}.research-node:nth-of-type(10){top:22%;left:13%}.research-node:nth-of-type(11){top:33%;left:34%}.research-node:nth-of-type(12){top:32%;right:31%}.research-node:nth-of-type(13){bottom:35%;right:26%}.research-node:nth-of-type(14){bottom:30%;left:29%}.research-node:nth-of-type(15){top:48%;left:46%}.research-node:nth-of-type(16){top:14%;right:31%}.research-node:nth-of-type(17){bottom:12%;right:39%}.research-frame{min-height:450px;display:flex;flex-direction:column;border:1px solid var(--line);background:rgba(0,0,0,.18)}.frame-head{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 18px;border-bottom:1px solid var(--line);font:11px var(--mono);text-transform:uppercase;letter-spacing:.06em}.frame-kind{color:var(--acid)}.frame-content{flex:1;min-height:300px;display:grid;place-items:center;overflow:hidden;background:rgba(0,0,0,.22)}.frame-content iframe,.frame-content img,.frame-content video{width:100%;height:100%;min-height:300px;border:0;object-fit:contain}.frame-content iframe{background:#fff}.frame-empty{max-width:320px;padding:28px;color:var(--muted);font-size:13px;line-height:1.6;text-align:center}.open-link{padding:14px 18px;border-top:1px solid var(--line);color:var(--acid);font:10px var(--mono);letter-spacing:.06em;text-decoration:none;text-transform:uppercase}.open-link:hover{text-decoration:underline}.footer{padding-top:18px;color:var(--muted);font:10px var(--mono);letter-spacing:.04em}.fullscreen-active .page{padding:clamp(16px,2.4vw,34px)}
+    @media(max-width:850px){.intro{align-items:start;flex-direction:column}.intro p{max-width:560px}.research-layout{grid-template-columns:1fr}.research-map{min-height:420px}.research-frame{min-height:400px}}
+    @media(max-width:520px){.page{padding:18px}.masthead{align-items:flex-start}.actions{gap:7px}.action{padding:9px;font-size:9px}.research-map{min-height:360px}.research-node{max-width:92px;padding:5px}.research-node .label{font-size:8px}.research-node .dot{width:11px;height:11px}.research-frame{min-height:350px}.intro h1{font-size:clamp(52px,17vw,86px)}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <a class="brand" href="Landing.html#home">un.moved<small>studios</small></a>
+      <div class="actions">
+        <a class="action" href="Landing.html#studio">← Inside the studio</a>
+        <button class="action" id="fullscreenButton" type="button" aria-label="Enter full screen">Go full screen ↗</button>
+      </div>
+    </header>
+    <section class="intro" aria-labelledby="pageTitle">
+      <div><div class="eyebrow">A living collection</div><h1 id="pageTitle">Research</h1></div>
+      <p>References, source material, and ideas behind the work. Select a point to explore an item. Use the full-screen control for an immersive view.</p>
+    </section>
+    <section class="research-layout" aria-label="Research collection and preview">
+      <div class="research-map" role="group" aria-label="Research collection">
+        <span class="map-orbit" aria-hidden="true"></span><span class="map-orbit inner" aria-hidden="true"></span>
+        <button class="research-node" type="button" data-title="Field Notes 01" data-kind="link" data-src="https://example.com/research/field-notes-01" aria-pressed="false"><span class="dot"></span><span class="label">Field Notes 01</span></button>
+        <button class="research-node" type="button" data-title="Archive Document 02" data-kind="pdf" data-src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" aria-pressed="false"><span class="dot"></span><span class="label">Archive Document 02</span></button>
+        <button class="research-node" type="button" data-title="Moving Image 03" data-kind="video" data-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-pressed="false"><span class="dot"></span><span class="label">Moving Image 03</span></button>
+        <button class="research-node" type="button" data-title="Visual Reference 04" data-kind="image" data-src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" aria-pressed="false"><span class="dot"></span><span class="label">Visual Reference 04</span></button>
+        <button class="research-node" type="button" data-title="Reading List 05" data-kind="link" data-src="https://example.com/research/reading-list-05" aria-pressed="false"><span class="dot"></span><span class="label">Reading List 05</span></button>
+        <button class="research-node" type="button" data-title="Source Text 06" data-kind="pdf" data-src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" aria-pressed="false"><span class="dot"></span><span class="label">Source Text 06</span></button>
+        <button class="research-node" type="button" data-title="Interview Clip 07" data-kind="video" data-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-pressed="false"><span class="dot"></span><span class="label">Interview Clip 07</span></button>
+        <button class="research-node" type="button" data-title="Photographic Study 08" data-kind="image" data-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" aria-pressed="false"><span class="dot"></span><span class="label">Photographic Study 08</span></button>
+        <button class="research-node" type="button" data-title="External Resource 09" data-kind="link" data-src="https://example.com/research/external-resource-09" aria-pressed="false"><span class="dot"></span><span class="label">External Resource 09</span></button>
+        <button class="research-node" type="button" data-title="Research Paper 10" data-kind="pdf" data-src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" aria-pressed="false"><span class="dot"></span><span class="label">Research Paper 10</span></button>
+        <button class="research-node" type="button" data-title="Footage Study 11" data-kind="video" data-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-pressed="false"><span class="dot"></span><span class="label">Footage Study 11</span></button>
+        <button class="research-node" type="button" data-title="Image Reference 12" data-kind="image" data-src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" aria-pressed="false"><span class="dot"></span><span class="label">Image Reference 12</span></button>
+        <button class="research-node" type="button" data-title="Project Link 13" data-kind="link" data-src="https://example.com/research/project-link-13" aria-pressed="false"><span class="dot"></span><span class="label">Project Link 13</span></button>
+        <button class="research-node" type="button" data-title="Digitized Archive 14" data-kind="pdf" data-src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" aria-pressed="false"><span class="dot"></span><span class="label">Digitized Archive 14</span></button>
+        <button class="research-node" type="button" data-title="Motion Reference 15" data-kind="video" data-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-pressed="false"><span class="dot"></span><span class="label">Motion Reference 15</span></button>
+      </div>
+      <div class="research-frame" aria-live="polite" aria-label="Selected research item">
+        <div class="frame-head"><span id="frameTitle">Research item</span><span class="frame-kind" id="frameKind">Select a dot</span></div>
+        <div class="frame-content" id="frameContent"><div class="frame-empty">Choose a research point to preview its link, PDF, video, or image here.</div></div>
+        <a class="open-link" id="openLink" href="#" target="_blank" rel="noopener noreferrer" hidden>Open item in new tab ↗</a>
+      </div>
+    </section>
+    <footer class="footer">un.moved studios · Research &amp; development</footer>
+  </main>
+  <script>
+    (()=>{
+      const nodes=[...document.querySelectorAll('.research-node')];
+      const frameContent=document.querySelector('#frameContent');
+      const frameTitle=document.querySelector('#frameTitle');
+      const frameKind=document.querySelector('#frameKind');
+      const openLink=document.querySelector('#openLink');
+      const showItem=node=>{
+        const {title,kind,src}=node.dataset;
+        nodes.forEach(item=>item.setAttribute('aria-pressed',String(item===node)));
+        frameTitle.textContent=title;frameKind.textContent=kind;frameContent.replaceChildren();
+        openLink.href=src;openLink.hidden=false;
+        if(kind==='image'){
+          const image=document.createElement('img');image.src=src;image.alt=title;image.loading='lazy';frameContent.append(image);
+        }else if(kind==='video'){
+          const video=document.createElement('video');video.src=src;video.controls=true;video.playsInline=true;video.preload='metadata';video.setAttribute('aria-label',title);frameContent.append(video);
+        }else{
+          const iframe=document.createElement('iframe');iframe.src=src;iframe.title=title;iframe.loading='lazy';iframe.referrerPolicy='strict-origin-when-cross-origin';
+          if(kind==='pdf')iframe.setAttribute('type','application/pdf');
+          frameContent.append(iframe);
+        }
+        openLink.textContent=kind==='link'?'Open link in new tab ↗':`Open ${kind} in new tab ↗`;
+      };
+      nodes.forEach(node=>node.addEventListener('click',()=>showItem(node)));
+      if(nodes.length)showItem(nodes[0]);
+
+      const fullscreenButton=document.querySelector('#fullscreenButton');
+      const updateFullscreenButton=()=>{
+        const active=Boolean(document.fullscreenElement);
+        fullscreenButton.textContent=active?'Exit full screen ↙':'Go full screen ↗';
+        fullscreenButton.setAttribute('aria-label',active?'Exit full screen':'Enter full screen');
+        document.body.classList.toggle('fullscreen-active',active);
+      };
+      fullscreenButton.addEventListener('click',async()=>{
+        try{
+          if(document.fullscreenElement)await document.exitFullscreen();
+          else await document.documentElement.requestFullscreen();
+        }catch(error){
+          fullscreenButton.textContent='Full screen unavailable';
+          fullscreenButton.setAttribute('aria-label','Full screen is unavailable in this browser');
+        }
+      });
+      document.addEventListener('fullscreenchange',updateFullscreenButton);
+    })();
+  </script>
+</body>
+</html>
